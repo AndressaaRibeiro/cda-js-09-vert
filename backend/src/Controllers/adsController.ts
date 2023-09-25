@@ -1,15 +1,35 @@
 import { Request, Response } from "express";
-import { ads } from "../data";
+import ad  from "../Entities/ad";
 
 const adsController = {
-  delete: (req: Request, res: Response) => {
-    ads.splice(req.body.id, 1);
-    res.send("The ad has been deleted");
+  read: async (_req: Request, res: Response) => {
+    try {
+      const result = await ad.find();
+      res.send(result);
+    } catch (err) {
+      res.send("There has been an error while reading the ads");
+    }
   },
-  put: (req: Request, res: Response) => {
-    ads[req.body.idToEdit] = req.body.newAd;
-    res.send("The ad has been edited");
+  create: async (req: Request, res: Response) => {
+    try {
+      const ad = req.body;
+      console.log(ad)
+      /*
+      const newAd = new Ad();
+      newAd.title = req.body.title;
+      newAd.price = req.body.price;
+      newAd.description = req.body.description;
+      await newAd.save();
+      */
+
+      await ad.save(req.body);
+      res.send("Ad has been created");
+    } catch (err) {
+      res.send("An error occured while creating the ad");
+    }
   },
+  delete: (_req: Request, _res: Response) => {},
+  put: (_req: Request, _res: Response) => {},
 };
 
 export default adsController;
