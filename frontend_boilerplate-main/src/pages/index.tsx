@@ -8,7 +8,6 @@ export default function Home() {
     <>
       <body>
         <main className="main-content">
-          <Header />
           <RecentAds />
         </main>
       </body>
