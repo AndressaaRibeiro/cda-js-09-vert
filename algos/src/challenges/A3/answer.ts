@@ -22,11 +22,11 @@ export default function ({
 
 // used interfaces, do not touch
 export interface AdWithTags {
-    title: string;
-    price: number;
-    tags: string[];
-  }
-  
-  export interface AdWithTagsAndClosestAds extends AdWithTags {
-    closestAds: AdWithTags[];
-  }
+  title: string;
+  price: number;
+  tags: string[];
+}
+
+export interface AdWithTagsAndClosestAds extends AdWithTags {
+  closestAds: AdWithTags[];
+}

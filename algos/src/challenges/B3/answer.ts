@@ -23,11 +23,11 @@ export default function ({
  */
 // used interfaces, do not touch
 export interface Message {
-    sentBy: string;
-    sentAt: string;
-    content: string;
-  }
-  
-  export interface MessageWithUnread extends Message {
-    unread: boolean;
-  }
+  sentBy: string;
+  sentAt: string;
+  content: string;
+}
+
+export interface MessageWithUnread extends Message {
+  unread: boolean;
+}

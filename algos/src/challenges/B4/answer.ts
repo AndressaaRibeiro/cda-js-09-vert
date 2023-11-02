@@ -35,13 +35,13 @@ export default function ({ messages }: { messages: Message[] }): DayMessages[] {
  */
 // used interfaces, do not touch
 export interface Message {
-    content: string;
-    sentBy: string;
-    sentAt: string;
-    message: string;
-  }
-  
-  export interface DayMessages {
-    day: string;
-    messages: Message[];
-  }
+  content: string;
+  sentBy: string;
+  sentAt: string;
+  message: string;
+}
+
+export interface DayMessages {
+  day: string;
+  messages: Message[];
+}

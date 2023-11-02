@@ -21,8 +21,8 @@ export default function ({
 
 // used interfaces, do not touch
 export interface MessageWithImages {
-    sentBy: string;
-    content: string;
-    images: string[];
-    sentAt: string;
-  }
+  sentBy: string;
+  content: string;
+  images: string[];
+  sentAt: string;
+}

@@ -57,11 +57,11 @@ export default function ({ ads }: { ads: Ad[] }): MonthAds[] {
 
 // used interfaces, do not touch
 export interface Ad {
-    title: string;
-    createdAt: string;
-  }
-  
-  export interface MonthAds {
-    month: string;
-    ads: Ad[];
-  }
+  title: string;
+  createdAt: string;
+}
+
+export interface MonthAds {
+  month: string;
+  ads: Ad[];
+}
