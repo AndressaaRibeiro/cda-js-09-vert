@@ -54,14 +54,14 @@ export default function ({
  */
 // used interfaces, do not touch
 export interface Message {
-    content: string;
-    sentBy: string;
-    sentAt: string;
-    message: string;
-  }
-  
-  export interface MessageStatsSlot {
-    fromDatetime: string;
-    toDatetime: string;
-    messagesCount: number;
-  }
+  content: string;
+  sentBy: string;
+  sentAt: string;
+  message: string;
+}
+
+export interface MessageStatsSlot {
+  fromDatetime: string;
+  toDatetime: string;
+  messagesCount: number;
+}

@@ -47,13 +47,13 @@ export default function ({
  */
 // used interfaces, do not touch
 export interface OpeningSlot {
-    isoWeekday: number;
-    opensAt: string;
-    closesAt: string;
-  }
-  
-  export interface PlanningSlot {
-    fromTime: string;
-    toTime: string;
-    status: "opened" | "closed";
-  }
+  isoWeekday: number;
+  opensAt: string;
+  closesAt: string;
+}
+
+export interface PlanningSlot {
+  fromTime: string;
+  toTime: string;
+  status: "opened" | "closed";
+}

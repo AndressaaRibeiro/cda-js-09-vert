@@ -21,16 +21,16 @@ export default function ({
 
 // used interfaces, do not touch
 interface Ad {
-    title: string;
-    price: number;
-    tags: string[];
-  }
-  
-  export interface Category {
-    ads: Ad[];
-    name: string;
-  }
-  
-  export interface CategoryWithTags extends Category {
-    tags: string[];
-  }
+  title: string;
+  price: number;
+  tags: string[];
+}
+
+export interface Category {
+  ads: Ad[];
+  name: string;
+}
+
+export interface CategoryWithTags extends Category {
+  tags: string[];
+}
